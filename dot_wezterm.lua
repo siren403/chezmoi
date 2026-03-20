@@ -45,9 +45,9 @@ config.keys = {
   { key = 'DownArrow',  mods = 'ALT', action = wezterm.action.ActivatePaneDirection 'Down'  },
   { key = 't', mods = 'CTRL', action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
   -- Ctrl+W: 탭 닫기
-  { key = 'w', mods = 'CTRL', action = wezterm.action.CloseCurrentTab { confirm = false } },
+  { key = 'w', mods = 'CTRL', action = wezterm.action.CloseCurrentTab { confirm = true } },
   -- Ctrl+Shift+W: pane 닫기
-  { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = false } },
+  { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = true } },
    -- D: 수직 분할 (좌우)
   { key = 'd', mods = 'CTRL|SHIFT', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
   -- E: 수평 분할 (위아래)
